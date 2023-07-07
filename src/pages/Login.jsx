@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
+
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  
 
   useEffect(() => {
     console.log('Email:', email);
@@ -12,12 +14,14 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log('Submitted');
-
+  
+    console.log ('Submitted');
+    
+  
     setEmail('');
     setPassword('');
   };
-
+  
   return (
     <div style={{backgroundColor:'skyblue'}} className="login template d-flex justify-content-center align-items-center p-5">
       <div className="p-5 rounded" style={{ width: '400px' }}> 
@@ -50,7 +54,7 @@ function Login() {
             
           </div>
           <div className="d-grid">
-            <button className="btn btn-primary" type="submit">
+            <button className="btn btn-primary" type="submit" >
               Sign In
             </button>
           </div>
@@ -62,3 +66,5 @@ function Login() {
 }
 
 export default Login;
+
+

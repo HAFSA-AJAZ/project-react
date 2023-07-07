@@ -5,8 +5,8 @@ import React from 'react'
 export default function FooterSection() {
   return (
     
-    <div  className="main-footer bg-secondary">
-      <div className="container text-center text-black">
+    <div style={{backgroundColor:'black'}} className="main-footer">
+      <div className="container text-center text-secondary">
         <div className="row">
 
           <div className="col">

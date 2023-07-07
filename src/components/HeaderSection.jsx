@@ -4,7 +4,7 @@ export default function HeaderSection() {
   return (
     <>
            <div className="">
-        <div style={{width: '100vw' , height: '100vh'}}className="d-flex bg-danger justify-content-center align-items-center">
+        <div style={{width: '100vw' , height: '100vh', backgroundColor:'pink'}}className="d-flex  justify-content-center align-items-center">
            <div>
             <img className='img-fuild' src="https://i.graphicmama.com/blog/wp-content/uploads/2021/06/15141019/Free-Eccomerce-Illustrations-Vector-04.png" alt="" />
            </div>

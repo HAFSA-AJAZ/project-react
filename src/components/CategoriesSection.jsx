@@ -11,22 +11,21 @@ export default function CategoriesSection() {
 
   }, [])
   
-
   return (
-    <div  className="container bg-secondary">
+    <div style={{backgroundColor:'pink'}} className="container">
       <div className="my-5 text-center">
         <h1>Categories</h1>
-        <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum, laudantium earum sit saepe dolore aperiam vitae ullam iusto deserunt, ipsam asperiores temporibus! Quis exercitationem neque porro nisi saepe autem?</p>
+        <p className='text-dark'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum, laudantium earum sit saepe dolore aperiam vitae ullam iusto deserunt, ipsam asperiores temporibus! Quis exercitationem neque porro nisi saepe autem?</p>
       </div>
 
-      <div className="row bg-secondary">
+      <div style={{backgroundColor:'pink'}} className="row">
         {
           categories.map((val, key) =>
             <div  className="col-md-4 my-3  " key={key}>
               <Link className='text-decoration-none' to={`/products/category/${val}`}>
                 <Card>
                   <Card.Body>
-                    <Card.Title className='text-secondary'>{key + 1} - {val.toUpperCase().replace('-', ' ')}</Card.Title>
+                    <Card.Title className='text-secondary'>{key + 1} - {val.toUpperCase().replace('-', ' ')} </Card.Title>
                   </Card.Body>
                 </Card>
               </Link>

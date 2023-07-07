@@ -4,14 +4,13 @@ export default function Login(){
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
+  
 
   useEffect(() => {
     console.log('Name:', name);
     console.log('Email:', email);
     console.log('Password:', password);
-    console.log('Phone Number:', phoneNumber);
-  }, [name, email, password, phoneNumber]);
+  }, [name, email, password]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

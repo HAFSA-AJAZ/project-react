@@ -1,7 +1,6 @@
 import React from 'react'
 import { Route,Routes,Navigate } from 'react-router-dom'
 import Home from './pages/Home'
-import Login from './pages/Login'
 import Products from './pages/Products'
 import Signup from './pages/Signup'
 import Page404 from './pages/page404'
@@ -11,11 +10,11 @@ import FooterSection from './components/FooterSection'
 import CategoryPage from './pages/CategoryPage'
 import ProductsPage from './pages/ProductsPage'
 import './App.css'
-
+import Login from './pages/Login'
 
 export default function App() {
 
-  const [user,setUser] = useState(false)
+  const [user,setUser] = useState(true)
   return(
   <>
 
@@ -42,7 +41,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="*" element={<Navigate to="/login" replace={true}  />} />
+            <Route path="*" element={<Navigate to="/login" replace={true} />} />
           </Routes>
           )
         }
