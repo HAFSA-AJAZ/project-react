@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import CategoryModal from '../components/CategoryModal'
+import CategoryModal from '../Components/CategoryModal'
 import axios from 'axios'
 import { BsFillPencilFill } from 'react-icons/bs'
 import { AiFillDelete } from 'react-icons/ai'
