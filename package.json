@@ -12,9 +12,11 @@
   "dependencies": {
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
+    "firebase": "^10.3.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
     "react-router-dom": "^6.13.0",
     "react-stars": "^2.2.5",
     "sweetalert2": "^11.7.12"

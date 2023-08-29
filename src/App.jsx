@@ -11,16 +11,33 @@ import CategoryPage from './pages/CategoryPage'
 import ProductsPage from './pages/ProductsPage'
 import './App.css'
 import Login from './pages/Login'
+import Admin from './Admin'
+import Guest from './Guest'
+import User from './User'
+
+ 
+const ComponentByRoles = {
+  'admin': Admin,
+  'user': User,
+  'guest': Guest
+}
+
+const getUserRole = (params) => ComponentByRoles[params] || ComponentByRoles['guest']
+
 
 export default function App() {
+const [role, setRole] = useState('admin')
+const CurrentUser = getUserRole(role)
+
 
   const [user,setUser] = useState(true)
   return(
   <>
+  <NavigationBar/>
+<CurrentUser/>
+        
 
-        <NavigationBar/>
-
-
+ 
 
         {
           user
